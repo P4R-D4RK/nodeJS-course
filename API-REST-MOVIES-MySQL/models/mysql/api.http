@@ -1,0 +1,32 @@
+### CREATE MOVIE
+POST http://localhost:1234/movie/
+Content-Type: application/json
+
+{
+    "sql": "SELECT * FROM users",
+    "title": "The Godfather 5",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "genre": ["Crime", "Drama"],
+    "rate": 9.2,
+    "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm2487634432"
+}
+
+### DELETE MOVIE
+DELETE http://localhost:1234/movie/22b061d6-5ebe-11ef-8c9c-62e451e58b09
+Content-Type: application/json
+
+### UPDATE MOVIE
+PATCH http://localhost:1234/movie/396f0a66-5ebf-11ef-8c9c-62e451e58b09
+Content-Type: application/json
+
+{
+    "title": "The Godfather 5.1",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "genre": ["Fantasy", "Drama"],
+    "rate": 9.2,
+    "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm2487634432"
+}
