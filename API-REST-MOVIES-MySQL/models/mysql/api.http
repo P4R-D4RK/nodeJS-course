@@ -1,10 +1,16 @@
+### GET MOVIES
+GET http://localhost:1234/movie/
+
+### GET MOVIE BY ID
+GET http://localhost:1234/movie/7A66E8CF4AB74A88BBAA1325229B0C28
+
 ### CREATE MOVIE
 POST http://localhost:1234/movie/
 Content-Type: application/json
 
 {
     "sql": "SELECT * FROM users",
-    "title": "The Godfather 5",
+    "title": "The Godfather 0",
     "year": 1972,
     "director": "Francis Ford Coppola",
     "duration": 175,
@@ -14,19 +20,19 @@ Content-Type: application/json
 }
 
 ### DELETE MOVIE
-DELETE http://localhost:1234/movie/22b061d6-5ebe-11ef-8c9c-62e451e58b09
+DELETE http://localhost:1234/movie/7A66E8CF4AB74A88BBAA1325229B0C28
 Content-Type: application/json
 
 ### UPDATE MOVIE
-PATCH http://localhost:1234/movie/396f0a66-5ebf-11ef-8c9c-62e451e58b09
+PATCH http://localhost:1234/movie/E00F9E484C2D42DEA397436A5EF88AD0
 Content-Type: application/json
 
 {
-    "title": "The Godfather 5.1",
+    "title": "The Godfather 10",
     "year": 1972,
     "director": "Francis Ford Coppola",
     "duration": 175,
-    "genre": ["Fantasy", "Drama"],
+    "genre": ["Fantasy", "Crime"],
     "rate": 9.2,
     "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm2487634432"
 }
